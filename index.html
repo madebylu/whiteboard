@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whiteboard by Lu</title>
+  <!--Styles-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/whiteboard.css">
+  <!--Scripts-->
+  <script src="js/jquery-2.2.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <p id="controls">
+      <button class="btn btn-primary">Draw</button>
+      <button class="btn" id="toggle_keyboard">Write</button>
+      <button class="btn" id="clear_whiteboard">Clear</button>
+      <input type="color" class="btn" id="color-picker"/>
+    </p>
+    <div id="keyboard">
+      <div id="top-row">
+        <button class="btn key">q</button>
+        <button class="btn key">w</button>
+        <button class="btn key">e</button>
+        <button class="btn key">r</button>
+        <button class="btn key">t</button>
+        <button class="btn key">y</button>
+        <button class="btn key">u</button>
+        <button class="btn key">i</button>
+        <button class="btn key">o</button>
+        <button class="btn key">p</button>
+      </div>
+      <div id="middle-row">
+        <button class="btn key">a</button>
+        <button class="btn key">s</button>
+        <button class="btn key">d</button>
+        <button class="btn key">f</button>
+        <button class="btn key">g</button>
+        <button class="btn key">h</button>
+        <button class="btn key">j</button>
+        <button class="btn key">k</button>
+        <button class="btn key">l</button>
+        <button class="btn command-return">Rt</button>
+      </div>
+      <div id="bottom-row">
+        <button class="btn key">\</button>
+        <button class="btn key">z</button>
+        <button class="btn key">x</button>
+        <button class="btn key">c</button>
+        <button class="btn key">v</button>
+        <button class="btn key">b</button>
+        <button class="btn key">n</button>
+        <button class="btn key">m</button>
+        <button class="btn key">,</button>
+        <button class="btn key">.</button>
+      </div>
+      <div id="space-row">
+        <button class="btn command-space">&nbsp;</button>
+      </div>
+    </div>
+    <canvas id="whiteboard"></canvas>
+  <script src="js/whiteboard.js"></script>
+</body>
+</html>
+
