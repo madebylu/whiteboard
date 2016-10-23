@@ -212,10 +212,9 @@ $(function () {
         char_x = line_x;
     });
     $('.command-space').on('click touch', function(e) {
-        console.log("space");
         input_char = ' ';
-        whiteboard.fillText(input_char, pos_x, pos_y);
-        pos_x += whiteboard.measureText(input_char).width;
+        whiteboard.fillText(input_char, char_x, line_y);
+        char_x += whiteboard.measureText(' ').width;
     });
     $('#clear_whiteboard').on('click', function(e) {
         whiteboard.clearRect(0,0,can.width,can.height);
